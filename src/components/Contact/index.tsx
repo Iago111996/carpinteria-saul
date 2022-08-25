@@ -53,15 +53,15 @@ export function Contact() {
             <h1>Carrer Luis vives, 23, 46100 Burjassot, Valencia, España</h1>
 
             <h2>
-              <FiPhone size={16} />
+              <FiPhone size={16} style={{ marginRight: 8}} />
               +34 631 89 16 04
             </h2>
             <h2>
-              <FiMail size={16} />
-              email@exemple.com
+              <FiMail size={16} style={{ marginRight: 8}} />
+              carpiteriasahiren@gmail.com
             </h2>
             <h2>
-              <FiInstagram size={16} />
+              <FiInstagram size={16} style={{ marginRight: 8}} />
               _carpiteria_cocinas_sahiren
             </h2>
           </Left>

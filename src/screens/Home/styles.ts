@@ -5,31 +5,44 @@ export const Container = styled.div`
 
   header {
     max-width: 1200px;
-    height: 4rem;
+    min-height: 4rem;
 
     margin: 0 auto;
 
+    padding: 1rem;
+
     display: flex;
-    flex-direction: center;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: space-between;
+
+    @media (max-width: 400px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
 
     h1 {
       font-family: "DynaPuff";
-      font-size: 16px;
+      font-size: 1.2rem;
       font-weight: 400;
 
       color: ${({ theme }) => theme.colors.primary};
 
       span {
-        font-size: 28px;
+        font-size: 2rem;
 
         color: ${({ theme }) => theme.colors.text};
+      }
+
+      @media (max-width: 400px) {
+        margin-bottom: 1rem;
       }
     }
   }
 
   main {
+    width: 100%;
   }
 
   footer {

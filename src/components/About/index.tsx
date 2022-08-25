@@ -1,6 +1,7 @@
 import { WrapperContainer, Container, Title, Text, Bar } from "./styles";
 
 export function About() {
+
   return (
     <WrapperContainer id="about">
       <Container>

@@ -12,6 +12,10 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 1000px) {
+    display: none;
+  }
+
   .page {
   }
 

@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Container = styled.section`
   max-width: 1200px;
 
+  padding: 1rem;
   padding-bottom: 2rem;
 
   margin: 0 auto;
@@ -17,14 +18,26 @@ export const Container = styled.section`
     flex-direction: row;
     justify-content: space-between;
 
-    img {
-      border-radius: 6px;
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
 
-      margin-right: 3rem;
+    img {
+      width: 50%;
+      height: 80%;
+      border-radius: 6px;
+      @media (max-width: 600px) {
+        width: 100%;
+      }
     }
 
     aside {
-      width: 60%;
+      width: 50%;
+      @media (max-width: 600px) {
+        width: 100%;
+
+        margin-bottom: 1rem;
+      }
     }
   }
 `;
@@ -46,7 +59,7 @@ export const WrapperContainer = styled.div`
 
 export const Title = styled.h1`
   font-family: ${({ theme }) => theme.fonts.medium};
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   color: ${({ theme }) => theme.colors.primary};
 
@@ -62,4 +75,10 @@ export const Text = styled.h1`
   color: ${({ theme }) => theme.colors.primary};
 
   text-align: left;
+
+  @media (max-width: 600px) {
+    text-align: center;
+
+    font-size: 1rem;
+  }
 `;
