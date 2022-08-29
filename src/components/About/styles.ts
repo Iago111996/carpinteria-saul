@@ -23,8 +23,8 @@ export const Container = styled.section`
     }
 
     img {
-      width: 50%;
-      height: 80%;
+      width: 40%;
+      height: 70%;
       border-radius: 6px;
       @media (max-width: 600px) {
         width: 100%;
@@ -59,7 +59,7 @@ export const WrapperContainer = styled.div`
 
 export const Title = styled.h1`
   font-family: ${({ theme }) => theme.fonts.medium};
-  font-size: 1.5rem;
+  font-size: 2rem;
 
   color: ${({ theme }) => theme.colors.primary};
 
@@ -68,7 +68,7 @@ export const Title = styled.h1`
   padding-bottom: 2rem;
 `;
 
-export const Text = styled.h1`
+export const Text = styled.p`
   font-family: ${({ theme }) => theme.fonts.regular};
   font-size: 1.4rem;
 

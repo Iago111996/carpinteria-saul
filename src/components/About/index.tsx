@@ -1,7 +1,6 @@
 import { WrapperContainer, Container, Title, Text, Bar } from "./styles";
 
 export function About() {
-
   return (
     <WrapperContainer id="about">
       <Container>
@@ -16,8 +15,8 @@ export function About() {
               decorativo, tarimas, armarios, cocinas empotradas, etc.
               <br />
               <br />
-              Entre en contacto con nosostros se necesitas, estamos prontos para
-              atenderte.
+              No dude en conctatarnos, tienemos un equipo especializado
+              esperandote, hacemos presupuesto sin compromiso.
             </Text>
           </aside>
 
